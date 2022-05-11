@@ -5314,8 +5314,7 @@ if text == 'تعطيل الترحيب' then
 
 end
 if not Admin(msg) then
-return send(msg.chat_id_,msg.id_,'*• اهلا عزيزي \n عذرا الامر يخص- ادمن - مدير*')
-end  
+return send(msg.chat_id_,msg.id_,'*• اهلا عزيزي \n عذرا الامر يخص- ادمن - مدير*')  
 redis:del(bot_id..'LONER:Chek:Welcome'..msg.chat_id_) 
 return send(msg.chat_id_, msg.id_,'• تم تعطيل ترحيب المجموعه') 
 end
